@@ -4,7 +4,19 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
+  <button @click="$showModal('my-modal-1')">Show Red Modal</button>
+  <!-- ModalBackdrop /-->
 </template>
+
+<script>
+import ModalBackdrop from './components/ModalBackdrop.vue';
+
+export default {
+  components: {
+    ModalBackdrop,
+  }
+}
+</script>
 
 <style>
 #app {
